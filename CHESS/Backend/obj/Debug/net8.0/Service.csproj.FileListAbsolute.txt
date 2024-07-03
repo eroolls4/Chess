@@ -1,0 +1,11 @@
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\bin\Debug\net8.0\Service.deps.json
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\bin\Debug\net8.0\Service.dll
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\bin\Debug\net8.0\Service.pdb
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\Service.dll
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\refint\Service.dll
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\Service.pdb
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\Backend\obj\Debug\net8.0\ref\Service.dll
