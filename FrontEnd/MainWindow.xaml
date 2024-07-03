@@ -5,18 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FrontEnd"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600
-        " Width="600"
-        Icon="Assets/icon.ico">
-    <Grid >
-        <!--Margin="0,0,0,-16"--> 
-        <!--<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="157*"/>
-        </Grid.ColumnDefinitions>-->
+        Title="CHESS"
+        SizeToContent="Height"
+         Width="600"
+        Icon="Assets/icon.ico"
+        WindowStartupLocation="CenterScreen">
+    <Viewbox>
+        <Grid x:Name="BoardGrid"
+              Width="600"
+              Height="600"
+              MouseDown="BoardGrid_MouseDown"
+              >
+            <!--Margin="0,0,0,-16"-->
+            <!--<Grid.ColumnDefinitions>
+          <ColumnDefinition Width="3*"/>
+          <ColumnDefinition Width="157*"/>
+      </Grid.ColumnDefinitions>-->
 
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/Board.png"/>
-        </Grid.Background>
-    </Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Board.png"/>
+            </Grid.Background>
+
+            <UniformGrid
+                x:Name="HighlightGrid"
+                Rows="8"
+                Columns="8"
+            
+                >
+            </UniformGrid>
+
+
+            <UniformGrid
+                x:Name="PieceGrid"
+                Rows="8"
+                Columns="8"
+                RenderOptions.BitmapScalingMode="HighQuality"
+                >
+                
+            </UniformGrid>
+        </Grid>
+
+    </Viewbox>
+    
+   
 </Window>
