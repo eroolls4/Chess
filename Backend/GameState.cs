@@ -27,7 +27,9 @@ namespace Backend
             }
 
             Piece piece = board[position];
-            return piece.getAllMoves(position, board);
+
+            IEnumerable<Moves> canidateMoves = piece.getAllMoves(position, board);
+            return canidateMoves.Where(move => move.isLegal(board));
         }
 
 

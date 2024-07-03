@@ -47,7 +47,17 @@ namespace Backend
 
         protected IEnumerable<Position> MovePosInDirs(Position from, Board board, Direction[] dirs)
         {
-          return dirs.SelectMany(dir =>  MovePosInDir(from, board, dir));
+            return dirs.SelectMany(dir => MovePosInDir(from, board, dir));
+        }
+
+        public virtual bool CanCaptureOpponentKing(Position from ,Board board) //detect check in a moment
+        { 
+            return getAllMoves(from, board).Any(move =>
+            {
+                Piece piece = board[move.toPosition];
+                return piece != null && piece.type == PIECE_TYPE.King;
+            });
+
         }
     }
 }

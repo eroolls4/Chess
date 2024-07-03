@@ -64,9 +64,52 @@ namespace Backend
             return pos.Row >= 0 && pos.Row < 8 && pos.Column >= 0 && pos.Column < 8;
         }
 
-        public  bool isEmpty(Position pos)
+        public bool isEmpty(Position pos)
         {
             return this[pos] == null;
+        }
+
+
+        public IEnumerable<Position> NonEmptyPositions()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    Position position = new Position(i, j);
+
+                    if (!isEmpty(position))
+                    {
+                        yield return position;
+                    }
+                }
+            }
+        }
+
+        public IEnumerable<Position> NonEmptyPositionsFor(Player player)
+        {
+            return NonEmptyPositions().Where(pos => this[pos].Color == player);
+        }
+
+
+        public bool IsInCheck(Player player)
+        {
+            return NonEmptyPositionsFor(player.findOpponent()).Any(pos =>
+            {
+                Piece piece = this[pos];
+                return piece.CanCaptureOpponentKing(pos, this);
+            });
+        }
+
+        public Board Copy()
+        {
+            Board copy=new Board();
+
+            foreach (Position pos in NonEmptyPositions())
+            {
+                copy[pos] = this[pos].Copy();
+            }
+            return copy;
         }
     }
 }

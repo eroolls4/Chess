@@ -57,10 +57,19 @@ namespace Backend
 
         public override IEnumerable<Moves> getAllMoves(Position from, Board board)
         {
-           foreach(Position to in AllowedMovePositions(from, board))
+            foreach (Position to in AllowedMovePositions(from, board))
             {
-                    yield return new NormalMove(from,to);
+                yield return new NormalMove(from, to);
             }
+        }
+
+        public override bool CanCaptureOpponentKing(Position from, Board board)
+        {
+            return AllowedMovePositions(from, board).Any(to =>
+            {
+                Piece piece = board[to];
+                return piece != null && piece.type == PIECE_TYPE.King;
+            });
         }
     }
 }
