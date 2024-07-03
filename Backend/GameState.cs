@@ -12,6 +12,8 @@ namespace Backend
 
         public Player CurrentPlayer { get; private set; }
 
+        public Result result { get; private set; } = null;
+
         public GameState(Board board, Player currentPlayer)
         {
             this.board = board;
@@ -37,6 +39,40 @@ namespace Backend
         {
             move.Execute(board);
             CurrentPlayer = CurrentPlayer.findOpponent();
+            CheckForGameOver();
+        }
+
+
+        public IEnumerable<Moves> AllLegalMovesForPlayer(Player player)
+        {
+            IEnumerable<Moves> candidateMoves = board.NonEmptyPositionsFor(player).SelectMany(pos =>
+            {
+                Piece piece = board[pos];
+                return piece.getAllMoves(pos, board);
+            });
+
+            return candidateMoves.Where(move => move.isLegal(board));
+        }
+
+        private void CheckForGameOver()
+        {
+            if (!AllLegalMovesForPlayer(CurrentPlayer).Any())
+            {
+                if (board.IsInCheck(CurrentPlayer))
+                {
+                    this.result = Result.Win(CurrentPlayer.findOpponent());
+                }
+                else
+                {
+                    this.result = Result.Draw(END_GAME_REASONS.Stealmate);
+                }
+            }
+
+        }
+
+        public bool isGameOver()
+        {
+            return result != null;
         }
     }
 }
