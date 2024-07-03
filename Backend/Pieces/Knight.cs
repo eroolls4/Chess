@@ -36,8 +36,6 @@ namespace Backend
             }
         }
 
-
-
         private IEnumerable<Position> AllowedMovePositions(Position from, Board board)
         {
             return PotentialToPositions(from).Where(pos => Board.isInside(pos) &&

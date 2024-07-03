@@ -22,3 +22,6 @@ C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\FrontEnd.pdb
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\FrontEnd.genruntimeconfig.cache
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\ref\FrontEnd.dll
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\GameOverMenu.g.cs
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\App.baml
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\GameOverMenu.baml

@@ -70,6 +70,11 @@ namespace FrontEnd
 
         private void BoardGrid_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            if (isMenuOnScreen())
+            {
+                return;
+            }
+
             Point point = e.GetPosition(BoardGrid); //point relative to boardGrid
             Position pos = ToSquarePosition(point);
 
@@ -99,6 +104,12 @@ namespace FrontEnd
             gameState.makeMove(move);
             drawBoard(gameState.board);
             setCursor(gameState.CurrentPlayer);
+
+
+            if (gameState.isGameOver())
+            {
+                showGameOver(); 
+            }
         }
 
         private void OnFromPositionSelected(Position pos)
@@ -157,13 +168,47 @@ namespace FrontEnd
 
         private void setCursor(Player player)
         {
-            if(player == Player.White)
+            if (player == Player.White)
             {
-                Cursor=ChessCursors.whiteCursor;
-            }else if(player == Player.Black)
-            {
-                Cursor=ChessCursors.blackCursor;
+                Cursor = ChessCursors.whiteCursor;
             }
+            else if (player == Player.Black)
+            {
+                Cursor = ChessCursors.blackCursor;
+            }
+        }
+
+        private bool isMenuOnScreen()
+        {
+            return MenuContainer.Content != null;
+        }
+
+        private void showGameOver()
+        {
+            GameOverMenu gameOverMenu = new GameOverMenu(gameState);
+            MenuContainer.Content = gameOverMenu;
+
+            gameOverMenu.optionSelected += option =>
+            {
+                if (option == OPTION.RESTART)
+                {
+                    MenuContainer.Content = null;
+                    RestartGame();
+                }
+                else
+                {
+                    Application.Current.Shutdown();
+                }
+            };
+        }
+
+        private void RestartGame()
+        {
+            HideHighlights();
+            moveCache.Clear();
+            gameState = new GameState(Board.Init(), Player.White);
+            drawBoard(gameState.board);
+            setCursor(gameState.CurrentPlayer);
         }
     }
 }

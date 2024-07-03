@@ -9,12 +9,12 @@ namespace Backend
     public class Result
     {
         public Player Winner { get; }
-        public END_GAME_REASONS Reasont { get; }
+        public END_GAME_REASONS Reason { get; }
 
         public Result(Player winner, END_GAME_REASONS reasont)
         {
             Winner = winner;
-            Reasont = reasont;
+            Reason = reasont;
         }
 
         public static Result Win(Player winner)
