@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,13 +55,32 @@ namespace Backend
         }
 
 
+        private static IEnumerable<Moves> createPromotionMoves(Position from ,Position to)
+        {
+            yield return new PawnPromotion(from, to, PIECE_TYPE.Knight);
+            yield return new PawnPromotion(from, to, PIECE_TYPE.Bishop);
+            yield return new PawnPromotion(from, to, PIECE_TYPE.Rook);
+            yield return new PawnPromotion(from,to,PIECE_TYPE.Queen);
+        }
+
+
         private IEnumerable<Moves> ForwardMoves(Position from, Board board)
         {
             Position oneMovePos = from + forward;
 
             if (canMoveTo(oneMovePos, board))
             {
-                yield return new NormalMove(from, oneMovePos);
+                if(oneMovePos.Row == 0 || oneMovePos.Row == 7)
+                {
+                    foreach(Moves movesProm  in createPromotionMoves(from, oneMovePos))
+                    {
+                        yield return movesProm;
+                    }
+                }
+                else
+                {
+                    yield return new NormalMove(from, oneMovePos);
+                }
 
                 Position twoMovePos = oneMovePos + forward;
                 if (!hasMoved && canMoveTo(twoMovePos, board))
@@ -78,7 +98,17 @@ namespace Backend
                 Position to = from + dir + forward;
                 if (canCaptureAt(to, board))
                 {
-                    yield return new NormalMove(from, to);
+                    if (to.Row == 0 || to.Row == 7)
+                    {
+                        foreach (Moves movesProm in createPromotionMoves(from, to))
+                        {
+                            yield return movesProm;
+                        }
+                    }
+                    else
+                    {
+                        yield return new NormalMove(from, to);
+                    }
                 }
             }
 

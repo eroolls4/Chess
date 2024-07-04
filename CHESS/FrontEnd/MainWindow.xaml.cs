@@ -1,4 +1,5 @@
 ﻿using Backend;
+using Service;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UI;
 
 namespace FrontEnd
 {
@@ -95,8 +97,33 @@ namespace FrontEnd
 
             if (moveCache.TryGetValue(pos, out Moves move))
             {
-                HandleMove(move);
+                if(move.MoveType == MOVE_TYPE.PawnPromotion)
+                {
+                    HandlePromotion(move.fromPosition, move.toPosition);
+                }
+                else
+                {
+                    HandleMove(move);
+                }
+
             }
+        }
+
+        private void HandlePromotion(Position fromPosition, Position toPosition)
+        {
+            pieceImages[toPosition.Row, toPosition.Column].Source = Images.GetImage(gameState.CurrentPlayer, PIECE_TYPE.Pawn);
+            pieceImages[fromPosition.Row, fromPosition.Column].Source = null;
+
+            PromotionMenu promotionMenu = new PromotionMenu(gameState.CurrentPlayer);
+
+            MenuContainer.Content = promotionMenu;
+
+            promotionMenu.PromotionClick += type =>
+            {
+                MenuContainer.Content = null;
+                Moves promMove = new PawnPromotion(fromPosition, toPosition, type);
+                HandleMove(promMove);
+            };
         }
 
         private void HandleMove(Moves move)
