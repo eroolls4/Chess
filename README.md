@@ -14,6 +14,10 @@ Mentors:
 - **Prof. Dr. Dejan Gjorgjevikj**
 - **MSc Stefan Andonov**
 
+## Note
+
+**Please note that this README is just a short resume of the project. For detailed information, download the full documentation from the repository.*
+
 ## Table of Contents
 
 - [Backend](#backend)
@@ -98,6 +102,7 @@ To run the project, follow these steps:
 2. Open the solution file in Visual Studio.
 3. Build the solution to restore dependencies and compile the project.
 4. Run the project using Visual Studio.
+
 
 
 
