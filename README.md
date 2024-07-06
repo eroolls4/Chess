@@ -11,7 +11,7 @@ Authors:
 - **Drin Kadriu**
 
 Mentors:
-- **Prof. Dr. Dejan Gjorgjevikj**
+- **PhD Dejan Gjorgjevikj**
 - **MSc Stefan Andonov**
 
 ## Note
