@@ -93,12 +93,13 @@ This game implements all the standard rules of modern chess, including:
 - Check and checkmate
 - Stalemate
 - Draw conditions (e.g., threefold repetition, fifty-move rule)
+- Use ESC for PauseMenu
 
 ## How to Run the Project
 
 To run the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/eroolls4/Chess`
+1. Clone the repository: `git clone https://github.com/eroolls4/Chess.git`
 2. Open the solution file in Visual Studio.
 3. Build the solution to restore dependencies and compile the project.
 4. Run the project using Visual Studio.
