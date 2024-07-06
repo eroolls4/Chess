@@ -1,3 +1,4 @@
+![Logo_FINKI_UKIM](https://github.com/eroolls4/Chess/assets/105580067/d9c47cf2-55c5-40c5-ae18-1c1590f03607)
 # Chess Game - Visual Programming Project,FCSE SKOPJE.
 
 This project is a .NET-based chess game that allows two players to play a game of chess with all the rules of modern chess. The project is divided into two main parts:
