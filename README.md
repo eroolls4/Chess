@@ -6,6 +6,14 @@ This project is a .NET-based chess game that allows two players to play a game o
 - **Backend**: Implements the entire game logic.
 - **Frontend**: User interface built as a WPF (Windows Presentation Foundation) application.
 
+Authors:
+- **Eroll Sakipi**
+- **Drin Kadriu**
+
+Mentors:
+- **Prof. Dr. Dejan Gjorgjevikj**
+- **MSc Stefan Andonov**
+
 ## Table of Contents
 
 - [Backend](#backend)
