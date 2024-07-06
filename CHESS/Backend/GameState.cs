@@ -37,6 +37,7 @@ namespace Backend
 
         public void makeMove(Moves move)
         {
+            board.setPlayerSkipPosition(CurrentPlayer,null);
             move.Execute(board);
             CurrentPlayer = CurrentPlayer.findOpponent();
             CheckForGameOver();

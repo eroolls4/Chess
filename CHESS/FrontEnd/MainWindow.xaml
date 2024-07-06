@@ -9,7 +9,9 @@
         SizeToContent="Height"
          Width="600"
         Icon="Assets/icon.ico"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        KeyDown="Window_KeyDown">
+        
     <Viewbox>
         <Grid x:Name="BoardGrid"
               Width="600"

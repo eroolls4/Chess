@@ -85,7 +85,7 @@ namespace Backend
                 Position twoMovePos = oneMovePos + forward;
                 if (!hasMoved && canMoveTo(twoMovePos, board))
                 {
-                    yield return new NormalMove(from, twoMovePos);
+                    yield return new DoublePawn(from, twoMovePos);
                 }
 
             }
@@ -96,7 +96,12 @@ namespace Backend
             foreach (Direction dir in new Direction[] { Direction.WEST, Direction.EAST })
             {
                 Position to = from + dir + forward;
-                if (canCaptureAt(to, board))
+
+                if(to == board.getPlayerSkipPosition(Color.findOpponent()))
+                {
+                    yield return new EnPassant(from, to);
+                }
+                else if (canCaptureAt(to, board))
                 {
                     if (to.Row == 0 || to.Row == 7)
                     {

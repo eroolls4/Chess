@@ -231,11 +231,36 @@ namespace FrontEnd
 
         private void RestartGame()
         {
+            selectedPos=null;
             HideHighlights();
             moveCache.Clear();
             gameState = new GameState(Board.Init(), Player.White);
             drawBoard(gameState.board);
             setCursor(gameState.CurrentPlayer);
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(!isMenuOnScreen() && e.Key == Key.Escape)
+            {
+                ShowPauseMenu();
+            }
+        }
+
+        private void ShowPauseMenu()
+        {
+             PauseMenu pauseMenu = new PauseMenu(); 
+             MenuContainer.Content= pauseMenu;
+
+             pauseMenu.optionSelected += option =>
+            {
+                MenuContainer.Content = null;
+                if(option == OPTION.RESTART)
+                {
+                    RestartGame();
+                }
+
+            };
         }
     }
 }

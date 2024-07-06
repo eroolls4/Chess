@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\backend\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|solutionrelative:backend\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\backend\\moves\\normalmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|solutionrelative:backend\\moves\\normalmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\backend\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|solutionrelative:backend\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\frontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|solutionrelative:frontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\frontend\\promotionmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|solutionrelative:frontend\\promotionmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\frontend\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|solutionrelative:frontend\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\backend\\pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|solutionrelative:backend\\pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\backend\\moves\\pawnpromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AD53D7D-53BA-494B-8F77-D57DCD84FC95}|Backend\\Service.csproj|solutionrelative:backend\\moves\\pawnpromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|c:\\users\\eroll saqipi\\desktop\\vp_project\\chess\\frontend\\pausemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BA91AC91-1724-4027-A0E1-6E826417A7F7}|FrontEnd\\UI.csproj|solutionrelative:frontend\\pausemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,92 +66,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NormalMove.cs",
-              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Moves\\NormalMove.cs",
-              "RelativeDocumentMoniker": "Backend\\Moves\\NormalMove.cs",
-              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Moves\\NormalMove.cs",
-              "RelativeToolTip": "Backend\\Moves\\NormalMove.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAQwBwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T20:42:11.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "King.cs",
-              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Pieces\\King.cs",
-              "RelativeDocumentMoniker": "Backend\\Pieces\\King.cs",
-              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Pieces\\King.cs",
-              "RelativeToolTip": "Backend\\Pieces\\King.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAIwGcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T20:04:27.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Castle.cs",
-              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Moves\\Castle.cs",
-              "RelativeDocumentMoniker": "Backend\\Moves\\Castle.cs",
-              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Moves\\Castle.cs",
-              "RelativeToolTip": "Backend\\Moves\\Castle.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAgwDIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T19:57:48.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "FrontEnd\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\MainWindow.xaml.cs",
               "RelativeToolTip": "FrontEnd\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAkwH4AAAAJAAAA",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAYwP8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T19:39:03.795Z",
+              "WhenOpened": "2024-07-06T11:21:21.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PromotionMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\PromotionMenu.xaml",
-              "RelativeDocumentMoniker": "FrontEnd\\PromotionMenu.xaml",
-              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\PromotionMenu.xaml",
-              "RelativeToolTip": "FrontEnd\\PromotionMenu.xaml",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "FrontEnd\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\MainWindow.xaml",
+              "RelativeToolTip": "FrontEnd\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-04T19:24:24.115Z",
+              "WhenOpened": "2024-07-06T11:21:02.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Pawn.cs",
-              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Pieces\\Pawn.cs",
-              "RelativeDocumentMoniker": "Backend\\Pieces\\Pawn.cs",
-              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Pieces\\Pawn.cs",
-              "RelativeToolTip": "Backend\\Pieces\\Pawn.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAcwG0AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T19:18:14.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PawnPromotion.cs",
-              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Moves\\PawnPromotion.cs",
-              "RelativeDocumentMoniker": "Backend\\Moves\\PawnPromotion.cs",
-              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\Backend\\Moves\\PawnPromotion.cs",
-              "RelativeToolTip": "Backend\\Moves\\PawnPromotion.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAawCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T19:07:09.282Z",
+              "DocumentIndex": 2,
+              "Title": "PauseMenu.xaml",
+              "DocumentMoniker": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\PauseMenu.xaml",
+              "RelativeDocumentMoniker": "FrontEnd\\PauseMenu.xaml",
+              "ToolTip": "C:\\Users\\Eroll Saqipi\\Desktop\\VP_PROJECT\\CHESS\\FrontEnd\\PauseMenu.xaml",
+              "RelativeToolTip": "FrontEnd\\PauseMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-06T11:09:13.203Z",
               "EditorCaption": ""
             }
           ]

@@ -27,3 +27,5 @@ C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\ref\UI.dll
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\PromotionMenu.g.cs
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\PromotionMenu.baml
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\PauseMenu.g.cs
+C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\obj\Debug\net8.0-windows\PauseMenu.baml

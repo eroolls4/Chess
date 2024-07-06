@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Eroll Saqipi\Desktop\VP_PROJECT\CHESS\FrontEnd\App.xaml
-31344263437
+4-1284736647
 
-9555624404
+101145111463
 199-446003504
-GameOverMenu.xaml;MainWindow.xaml;PromotionMenu.xaml;
+GameOverMenu.xaml;MainWindow.xaml;PauseMenu.xaml;PromotionMenu.xaml;
 
 False
 

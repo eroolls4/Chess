@@ -10,12 +10,28 @@ namespace Backend
     {
         private readonly Piece[,] pieces = new Piece[8, 8];
 
+        private readonly Dictionary<Player,Position> pawnSkipPositions=new Dictionary<Player, Position>()
+        {
+            { Player.White, null },
+            { Player.Black, null}
+        };
+
         public Piece this[int row, int col]
         {
             get { return pieces[row, col]; }
             set { pieces[row, col] = value; }
         }
 
+
+        public Position getPlayerSkipPosition(Player player)
+        {
+            return pawnSkipPositions[player];
+        }
+
+        public void setPlayerSkipPosition(Player player,Position position)
+        {
+            pawnSkipPositions[player] = position;
+        }
 
         public Piece this[Position position]
         {
